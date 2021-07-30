@@ -25,6 +25,12 @@
 		2BB9F30E26AF5FA900F43852 /* story-4-path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB9F30D26AF5FA900F43852 /* story-4-path.swift */; };
 		2BB9F31026AF5FB300F43852 /* s4-text.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2BB9F30F26AF5FB300F43852 /* s4-text.txt */; };
 		2BB9F31226AF5FBE00F43852 /* s4-title.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2BB9F31126AF5FBE00F43852 /* s4-title.txt */; };
+		3D374E9526B16B9A00C86470 /* CommonCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D374E9426B16B9A00C86470 /* CommonCollectionViewController.swift */; };
+		3D374E9926B182CD00C86470 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D374E9826B182CD00C86470 /* SettingsViewController.m */; };
+		3D374E9D26B1F37900C86470 /* ColorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D374E9C26B1F37900C86470 /* ColorsViewController.m */; };
+		3D374EA426B2F8F700C86470 /* ItemsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D374EA326B2F8F700C86470 /* ItemsCollectionViewCell.swift */; };
+		3D374EA626B4394E00C86470 /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D374EA526B4394E00C86470 /* StoryViewController.swift */; };
+		3D374EA826B4395A00C86470 /* GallaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D374EA726B4395A00C86470 /* GallaryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +54,16 @@
 		2BB9F30D26AF5FA900F43852 /* story-4-path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "story-4-path.swift"; sourceTree = "<group>"; };
 		2BB9F30F26AF5FB300F43852 /* s4-text.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "s4-text.txt"; sourceTree = "<group>"; };
 		2BB9F31126AF5FBE00F43852 /* s4-title.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "s4-title.txt"; sourceTree = "<group>"; };
+		3D374E9426B16B9A00C86470 /* CommonCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonCollectionViewController.swift; sourceTree = "<group>"; };
+		3D374E9626B182CC00C86470 /* RSSchool_T9-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RSSchool_T9-Bridging-Header.h"; sourceTree = "<group>"; };
+		3D374E9726B182CD00C86470 /* SettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		3D374E9826B182CD00C86470 /* SettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		3D374E9B26B1F37900C86470 /* ColorsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorsViewController.h; sourceTree = "<group>"; };
+		3D374E9C26B1F37900C86470 /* ColorsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorsViewController.m; sourceTree = "<group>"; };
+		3D374E9E26B2A67D00C86470 /* ColorDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorDelegate.h; sourceTree = "<group>"; };
+		3D374EA326B2F8F700C86470 /* ItemsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsCollectionViewCell.swift; sourceTree = "<group>"; };
+		3D374EA526B4394E00C86470 /* StoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
+		3D374EA726B4395A00C86470 /* GallaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GallaryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,10 +99,13 @@
 				2BB9F28F26ADFAEB00F43852 /* Data */,
 				2BB9E75B26AB605700112651 /* AppDelegate.swift */,
 				2BB9E75D26AB605700112651 /* SceneDelegate.swift */,
+				3D374EA126B2B6EC00C86470 /* Protocols */,
+				3D374E9A26B182DA00C86470 /* Controllers */,
 				2BB9E76126AB605700112651 /* Main.storyboard */,
 				2BB9E76426AB605900112651 /* Assets.xcassets */,
 				2BB9E76626AB605900112651 /* LaunchScreen.storyboard */,
 				2BB9E76926AB605900112651 /* Info.plist */,
+				3D374E9626B182CC00C86470 /* RSSchool_T9-Bridging-Header.h */,
 			);
 			path = RSSchool_T9;
 			sourceTree = "<group>";
@@ -149,6 +168,37 @@
 				2BB9F31126AF5FBE00F43852 /* s4-title.txt */,
 			);
 			path = "story-4";
+			sourceTree = "<group>";
+		};
+		3D374E9A26B182DA00C86470 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3D374E9426B16B9A00C86470 /* CommonCollectionViewController.swift */,
+				3D374EA526B4394E00C86470 /* StoryViewController.swift */,
+				3D374EA726B4395A00C86470 /* GallaryViewController.swift */,
+				3D374EA326B2F8F700C86470 /* ItemsCollectionViewCell.swift */,
+				3D374EA226B2B74700C86470 /* Settings */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3D374EA126B2B6EC00C86470 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				3D374E9E26B2A67D00C86470 /* ColorDelegate.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		3D374EA226B2B74700C86470 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				3D374E9726B182CD00C86470 /* SettingsViewController.h */,
+				3D374E9826B182CD00C86470 /* SettingsViewController.m */,
+				3D374E9B26B1F37900C86470 /* ColorsViewController.h */,
+				3D374E9C26B1F37900C86470 /* ColorsViewController.m */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,9 +282,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D374EA826B4395A00C86470 /* GallaryViewController.swift in Sources */,
+				3D374EA626B4394E00C86470 /* StoryViewController.swift in Sources */,
+				3D374E9D26B1F37900C86470 /* ColorsViewController.m in Sources */,
 				2BB9F30126AF557E00F43852 /* story-2-path.swift in Sources */,
 				2BB9E75C26AB605700112651 /* AppDelegate.swift in Sources */,
 				2BB9F30B26AF5EEC00F43852 /* story-3-path.swift in Sources */,
+				3D374E9926B182CD00C86470 /* SettingsViewController.m in Sources */,
+				3D374E9526B16B9A00C86470 /* CommonCollectionViewController.swift in Sources */,
+				3D374EA426B2F8F700C86470 /* ItemsCollectionViewCell.swift in Sources */,
 				2BB9F29126ADFAF100F43852 /* Data.swift in Sources */,
 				2BB9F2EC26AF1F6200F43852 /* story-1-path.swift in Sources */,
 				2BB9F30E26AF5FA900F43852 /* story-4-path.swift in Sources */,
@@ -395,6 +451,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.username.RSSchool-T9";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RSSchool_T9/RSSchool_T9-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -416,6 +473,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.username.RSSchool-T9";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RSSchool_T9/RSSchool_T9-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
