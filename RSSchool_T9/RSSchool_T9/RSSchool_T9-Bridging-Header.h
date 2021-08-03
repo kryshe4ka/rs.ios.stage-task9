@@ -3,3 +3,6 @@
 //
 
 #import "SettingsViewController.h"
+#import "SwitcherDelegate.h"
+#import "ColorDelegate.h"
+#import "UIColor+HexFormat.h"

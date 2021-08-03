@@ -9,12 +9,14 @@
 
 #import <UIKit/UIKit.h>
 #import "ColorDelegate.h"
+#import "SwitcherDelegate.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SettingsViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, ColorDelegate>
 
-
+@property(weak, nonatomic) id<SwitcherDelegate> delegateKL;
+@property(weak, nonatomic) id<ColorDelegate> delegateColor;
 
 @end
 

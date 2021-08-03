@@ -6,7 +6,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
-        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -54,34 +53,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Fvg-Kp-ZC1">
-                                <rect key="frame" x="20" y="84" width="374" height="778"/>
-                                <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="0ZS-05-JLg">
-                                    <size key="itemSize" width="128" height="128"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="yNA-7u-mfU">
-                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="2xF-63-6SA">
-                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </collectionViewCellContentView>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n8P-fp-p2M">
+                                <rect key="frame" x="343" y="74" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ukZ-q5-ugw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Fvg-Kp-ZC1" firstAttribute="leading" secondItem="ukZ-q5-ugw" secondAttribute="leading" constant="20" id="QrZ-lh-mxJ"/>
-                            <constraint firstItem="Fvg-Kp-ZC1" firstAttribute="top" secondItem="ukZ-q5-ugw" secondAttribute="top" constant="40" id="Rrs-Be-djm"/>
-                            <constraint firstItem="ukZ-q5-ugw" firstAttribute="bottom" secondItem="Fvg-Kp-ZC1" secondAttribute="bottom" id="Tkn-ZO-bfT"/>
-                            <constraint firstItem="Fvg-Kp-ZC1" firstAttribute="trailing" secondItem="ukZ-q5-ugw" secondAttribute="trailing" constant="-20" id="olH-eR-lX1"/>
+                            <constraint firstItem="n8P-fp-p2M" firstAttribute="top" secondItem="ukZ-q5-ugw" secondAttribute="top" constant="30" id="jCs-8q-0Am"/>
+                            <constraint firstItem="ukZ-q5-ugw" firstAttribute="trailing" secondItem="n8P-fp-p2M" secondAttribute="trailing" constant="25" id="vAv-yC-WMY"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -146,9 +127,6 @@
         <image name="donttouchthis" width="1600" height="720"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

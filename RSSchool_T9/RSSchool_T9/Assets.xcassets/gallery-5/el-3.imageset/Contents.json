@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "1621800870_13-oir_mobi-p-milie-slonyata-zhivotnie-krasivo-foto-13.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

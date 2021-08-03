@@ -30,7 +30,17 @@
 		3D374E9D26B1F37900C86470 /* ColorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D374E9C26B1F37900C86470 /* ColorsViewController.m */; };
 		3D374EA426B2F8F700C86470 /* ItemsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D374EA326B2F8F700C86470 /* ItemsCollectionViewCell.swift */; };
 		3D374EA626B4394E00C86470 /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D374EA526B4394E00C86470 /* StoryViewController.swift */; };
-		3D374EA826B4395A00C86470 /* GallaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D374EA726B4395A00C86470 /* GallaryViewController.swift */; };
+		3D374EAA26B4568100C86470 /* CloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D374EA926B4568100C86470 /* CloseButton.swift */; };
+		3D374EAC26B49B0500C86470 /* TypeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D374EAB26B49B0500C86470 /* TypeLabel.swift */; };
+		3D374EAE26B5D31100C86470 /* StoryLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D374EAD26B5D31100C86470 /* StoryLabel.swift */; };
+		3D374EB326B87EDE00C86470 /* ZoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D374EB226B87EDE00C86470 /* ZoomViewController.swift */; };
+		3D374EB926B975FF00C86470 /* UIColor+HexFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D374EB826B975FF00C86470 /* UIColor+HexFormat.m */; };
+		3D374EBD26B9881800C86470 /* s5-title.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3D374EBC26B9881800C86470 /* s5-title.txt */; };
+		3D374EBF26B9883A00C86470 /* s5-text.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3D374EBE26B9883A00C86470 /* s5-text.txt */; };
+		3D374EC126B9885200C86470 /* story-5-path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D374EC026B9885200C86470 /* story-5-path.swift */; };
+		3D374EC326B9887B00C86470 /* s6-title.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3D374EC226B9887B00C86470 /* s6-title.txt */; };
+		3D374EC526B9888800C86470 /* s6-text.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3D374EC426B9888800C86470 /* s6-text.txt */; };
+		3D374EC726B9889700C86470 /* story-6-path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D374EC626B9889700C86470 /* story-6-path.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,7 +73,19 @@
 		3D374E9E26B2A67D00C86470 /* ColorDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorDelegate.h; sourceTree = "<group>"; };
 		3D374EA326B2F8F700C86470 /* ItemsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsCollectionViewCell.swift; sourceTree = "<group>"; };
 		3D374EA526B4394E00C86470 /* StoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
-		3D374EA726B4395A00C86470 /* GallaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GallaryViewController.swift; sourceTree = "<group>"; };
+		3D374EA926B4568100C86470 /* CloseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseButton.swift; sourceTree = "<group>"; };
+		3D374EAB26B49B0500C86470 /* TypeLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeLabel.swift; sourceTree = "<group>"; };
+		3D374EAD26B5D31100C86470 /* StoryLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryLabel.swift; sourceTree = "<group>"; };
+		3D374EB126B84B0000C86470 /* SwitcherDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwitcherDelegate.h; sourceTree = "<group>"; };
+		3D374EB226B87EDE00C86470 /* ZoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomViewController.swift; sourceTree = "<group>"; };
+		3D374EB726B975FF00C86470 /* UIColor+HexFormat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexFormat.h"; sourceTree = "<group>"; };
+		3D374EB826B975FF00C86470 /* UIColor+HexFormat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexFormat.m"; sourceTree = "<group>"; };
+		3D374EBC26B9881800C86470 /* s5-title.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "s5-title.txt"; sourceTree = "<group>"; };
+		3D374EBE26B9883A00C86470 /* s5-text.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "s5-text.txt"; sourceTree = "<group>"; };
+		3D374EC026B9885200C86470 /* story-5-path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "story-5-path.swift"; sourceTree = "<group>"; };
+		3D374EC226B9887B00C86470 /* s6-title.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "s6-title.txt"; sourceTree = "<group>"; };
+		3D374EC426B9888800C86470 /* s6-text.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "s6-text.txt"; sourceTree = "<group>"; };
+		3D374EC626B9889700C86470 /* story-6-path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "story-6-path.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +121,6 @@
 				2BB9F28F26ADFAEB00F43852 /* Data */,
 				2BB9E75B26AB605700112651 /* AppDelegate.swift */,
 				2BB9E75D26AB605700112651 /* SceneDelegate.swift */,
-				3D374EA126B2B6EC00C86470 /* Protocols */,
 				3D374E9A26B182DA00C86470 /* Controllers */,
 				2BB9E76126AB605700112651 /* Main.storyboard */,
 				2BB9E76426AB605900112651 /* Assets.xcassets */,
@@ -122,6 +143,8 @@
 		2BB9F29226AE017D00F43852 /* Static */ = {
 			isa = PBXGroup;
 			children = (
+				3D374EBB26B987F100C86470 /* story-6 */,
+				3D374EBA26B987E800C86470 /* story-5 */,
 				2BB9F30C26AF5F9C00F43852 /* story-4 */,
 				2BB9F30326AF5D7E00F43852 /* story-3 */,
 				2BB9F2FC26AF554C00F43852 /* story-2 */,
@@ -174,9 +197,12 @@
 			isa = PBXGroup;
 			children = (
 				3D374E9426B16B9A00C86470 /* CommonCollectionViewController.swift */,
-				3D374EA526B4394E00C86470 /* StoryViewController.swift */,
-				3D374EA726B4395A00C86470 /* GallaryViewController.swift */,
 				3D374EA326B2F8F700C86470 /* ItemsCollectionViewCell.swift */,
+				3D374EB226B87EDE00C86470 /* ZoomViewController.swift */,
+				3D374EA526B4394E00C86470 /* StoryViewController.swift */,
+				3D374EAB26B49B0500C86470 /* TypeLabel.swift */,
+				3D374EAD26B5D31100C86470 /* StoryLabel.swift */,
+				3D374EA926B4568100C86470 /* CloseButton.swift */,
 				3D374EA226B2B74700C86470 /* Settings */,
 			);
 			path = Controllers;
@@ -186,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				3D374E9E26B2A67D00C86470 /* ColorDelegate.h */,
+				3D374EB126B84B0000C86470 /* SwitcherDelegate.h */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -193,12 +220,35 @@
 		3D374EA226B2B74700C86470 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				3D374EA126B2B6EC00C86470 /* Protocols */,
 				3D374E9726B182CD00C86470 /* SettingsViewController.h */,
 				3D374E9826B182CD00C86470 /* SettingsViewController.m */,
 				3D374E9B26B1F37900C86470 /* ColorsViewController.h */,
 				3D374E9C26B1F37900C86470 /* ColorsViewController.m */,
+				3D374EB726B975FF00C86470 /* UIColor+HexFormat.h */,
+				3D374EB826B975FF00C86470 /* UIColor+HexFormat.m */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		3D374EBA26B987E800C86470 /* story-5 */ = {
+			isa = PBXGroup;
+			children = (
+				3D374EBC26B9881800C86470 /* s5-title.txt */,
+				3D374EBE26B9883A00C86470 /* s5-text.txt */,
+				3D374EC026B9885200C86470 /* story-5-path.swift */,
+			);
+			path = "story-5";
+			sourceTree = "<group>";
+		};
+		3D374EBB26B987F100C86470 /* story-6 */ = {
+			isa = PBXGroup;
+			children = (
+				3D374EC226B9887B00C86470 /* s6-title.txt */,
+				3D374EC426B9888800C86470 /* s6-text.txt */,
+				3D374EC626B9889700C86470 /* story-6-path.swift */,
+			);
+			path = "story-6";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +313,7 @@
 			files = (
 				2BB9E76826AB605900112651 /* LaunchScreen.storyboard in Resources */,
 				2BB9F30726AF5D9D00F43852 /* s3-text.txt in Resources */,
+				3D374EC526B9888800C86470 /* s6-text.txt in Resources */,
 				2BB9F30926AF5DAF00F43852 /* s3-title.txt in Resources */,
 				2BB9F31226AF5FBE00F43852 /* s4-title.txt in Resources */,
 				2BB9F29526AE01A300F43852 /* s1-title.txt in Resources */,
@@ -270,7 +321,10 @@
 				2BB9F2FE26AF556600F43852 /* s2-title.txt in Resources */,
 				2BB9E76526AB605900112651 /* Assets.xcassets in Resources */,
 				2BB9F30226AF57B500F43852 /* s2-text.txt in Resources */,
+				3D374EBF26B9883A00C86470 /* s5-text.txt in Resources */,
+				3D374EBD26B9881800C86470 /* s5-title.txt in Resources */,
 				2BB9E76326AB605700112651 /* Main.storyboard in Resources */,
+				3D374EC326B9887B00C86470 /* s6-title.txt in Resources */,
 				2BB9F29726AE01B800F43852 /* s1-text.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,17 +336,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D374EA826B4395A00C86470 /* GallaryViewController.swift in Sources */,
 				3D374EA626B4394E00C86470 /* StoryViewController.swift in Sources */,
 				3D374E9D26B1F37900C86470 /* ColorsViewController.m in Sources */,
 				2BB9F30126AF557E00F43852 /* story-2-path.swift in Sources */,
+				3D374EC726B9889700C86470 /* story-6-path.swift in Sources */,
+				3D374EAA26B4568100C86470 /* CloseButton.swift in Sources */,
 				2BB9E75C26AB605700112651 /* AppDelegate.swift in Sources */,
 				2BB9F30B26AF5EEC00F43852 /* story-3-path.swift in Sources */,
 				3D374E9926B182CD00C86470 /* SettingsViewController.m in Sources */,
+				3D374EB326B87EDE00C86470 /* ZoomViewController.swift in Sources */,
 				3D374E9526B16B9A00C86470 /* CommonCollectionViewController.swift in Sources */,
+				3D374EAC26B49B0500C86470 /* TypeLabel.swift in Sources */,
 				3D374EA426B2F8F700C86470 /* ItemsCollectionViewCell.swift in Sources */,
 				2BB9F29126ADFAF100F43852 /* Data.swift in Sources */,
 				2BB9F2EC26AF1F6200F43852 /* story-1-path.swift in Sources */,
+				3D374EC126B9885200C86470 /* story-5-path.swift in Sources */,
+				3D374EB926B975FF00C86470 /* UIColor+HexFormat.m in Sources */,
+				3D374EAE26B5D31100C86470 /* StoryLabel.swift in Sources */,
 				2BB9F30E26AF5FA900F43852 /* story-4-path.swift in Sources */,
 				2BB9E75E26AB605700112651 /* SceneDelegate.swift in Sources */,
 			);
@@ -371,12 +431,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "RSSchool_T9/RSSchool_T9-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(PROJECT_NAME)-Swift.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -426,11 +488,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "RSSchool_T9/RSSchool_T9-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(PROJECT_NAME)-Swift.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -452,6 +516,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.username.RSSchool-T9";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "RSSchool_T9/RSSchool_T9-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "RSSchool_T9-Swift.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -474,6 +539,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.username.RSSchool-T9";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "RSSchool_T9/RSSchool_T9-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "RSSchool_T9-Swift.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

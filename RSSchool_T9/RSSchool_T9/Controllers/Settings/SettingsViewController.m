@@ -9,11 +9,15 @@
 
 #import "SettingsViewController.h"
 #import "ColorsViewController.h"
+#import "RSSchool_T9-Bridging-Header.h"
+#import "RSSchool_T9-Swift.h"
 
 @interface SettingsViewController ()
 
 @property (nonatomic, strong) UITableView * tableView;
 @property NSArray * data;
+@property BOOL drawOFF;
+@property ColorsViewController * colorsViewController;
 
 @end
 
@@ -21,8 +25,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor colorNamed:@"EFEFF4"];
+    self.view.backgroundColor = [UIColor colorNamed:@"F2F2F7"];
     [self setupView];
+    
+    self.colorsViewController = [[ColorsViewController alloc] init];
+    self.colorsViewController.delegate = self;
     
 }
 
@@ -31,18 +38,20 @@
     self.navigationItem.title = @"Settings";
     self.data = @[@"Draw stories", @"Stroke color"];
     
-    self.tableView = [[UITableView alloc] init];
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStyleInsetGrouped];
     self.tableView.translatesAutoresizingMaskIntoConstraints = NO;
     [self.view addSubview:self.tableView];
     [NSLayoutConstraint activateConstraints:@[
-       [self.tableView.leadingAnchor constraintEqualToAnchor:self.view.leadingAnchor constant:36],
-       [self.tableView.trailingAnchor constraintEqualToAnchor:self.view.trailingAnchor constant:-35],
-       [self.tableView.heightAnchor constraintEqualToConstant:104],
-       [self.tableView.topAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.topAnchor constant:30]
+       [self.tableView.leadingAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.leadingAnchor constant:0],
+       [self.tableView.trailingAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.trailingAnchor constant:0],
+       //[self.tableView.heightAnchor constraintEqualToConstant:144],
+       [self.tableView.bottomAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.bottomAnchor constant:0],
+
+       [self.tableView.topAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.topAnchor constant:0]
     ]];
     
     self.tableView.layer.cornerRadius = 16;
-    self.tableView.backgroundColor = [UIColor colorNamed:@"F9F9F9"];
+    self.tableView.backgroundColor = [UIColor colorNamed:@"F2F2F7"];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
         
@@ -66,7 +75,8 @@
             break;
         case 1:
             cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"CellId"];
-            cell.detailTextLabel.text = @"92003B";
+            cell.detailTextLabel.text = @"#92003B";
+            cell.detailTextLabel.textColor = [UIColor colorFromHexFormat:@"#92003B"];
             cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         default:
             break;
@@ -79,7 +89,8 @@
 
 - (void)switchChanged:(id)sender {
     UISwitch * switchControl = sender;
-    NSLog( @"The switch is %@", switchControl.on ? @"ON" : @"OFF" );
+    self.drawOFF = switchControl.on ? YES : NO;
+    [self.delegateKL setSwitcher:(switchControl.on ? YES : NO)];
 }
 
 - (NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -89,15 +100,17 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    ColorsViewController * colorsViewController = [[ColorsViewController alloc] init];
-    colorsViewController.delegate = self;
+    //ColorsViewController * colorsViewController = [[ColorsViewController alloc] init];
+    //self.colorsViewController.delegate = self;
             
-    [self.navigationController pushViewController:colorsViewController animated:YES];
+    [self.navigationController pushViewController:self.colorsViewController animated:YES];
 }
 
 - (void) setColor: (NSString *) strokeColor{
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow: 1 inSection:0];
     UITableViewCell * cell = [self.tableView cellForRowAtIndexPath:indexPath];
     cell.detailTextLabel.text = strokeColor;
+    cell.detailTextLabel.textColor = [UIColor colorFromHexFormat:strokeColor];
+    [self.delegateColor setColor:(strokeColor)];
 }
 @end

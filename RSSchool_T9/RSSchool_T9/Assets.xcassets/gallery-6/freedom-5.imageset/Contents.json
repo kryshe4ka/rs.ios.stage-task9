@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "VAS_VOT_NEZAVISIMOSTI_19082020_20200819_017.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

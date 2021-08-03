@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface ColorsViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @property(weak, nonatomic) id<ColorDelegate> delegate;
+@property (nonatomic) NSInteger currentColor;
 
 @end
 
