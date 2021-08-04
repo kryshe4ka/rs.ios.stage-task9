@@ -39,6 +39,13 @@ class StoryViewController : UIViewController {
         v.clipsToBounds = true
         v.layer.borderWidth = 1
         v.layer.borderColor = UIColor.white.cgColor
+        let gradient = CAGradientLayer();
+        gradient.colors = [
+            UIColor(named: "gr1")!.cgColor,
+            UIColor(named: "gr2")!.cgColor,
+        ];
+        gradient.locations = [0.64, 1];
+        v.layer.insertSublayer(gradient, at: 0)
         return v
     }()
     
@@ -67,6 +74,16 @@ class StoryViewController : UIViewController {
         v.translatesAutoresizingMaskIntoConstraints = false
         v.backgroundColor = .white
         return v
+    }()
+    
+    let titleLabel: UILabel = {
+        let v = UILabel()
+        v.translatesAutoresizingMaskIntoConstraints = false
+        v.textAlignment = .left
+        v.textColor = .white
+        v.numberOfLines = 0
+        v.font = UIFont.init(name: "Rockwell", size: 48)
+       return v
     }()
     
     let storyView: UIView = {
@@ -125,7 +142,9 @@ class StoryViewController : UIViewController {
         
         // add imageView to the scroll view
         scrollView.addSubview(imageView)
-        imageView.layer.insertSublayer(gradientLayer, at: 0)
+        
+        
+        
         let imageViewConstraints = [
             imageView.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: 100),
             imageView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 20),
@@ -145,6 +164,14 @@ class StoryViewController : UIViewController {
         ]
         NSLayoutConstraint.activate(typeLabelConstraints)
         
+        scrollView.addSubview(titleLabel)
+        let titleLabelConstraints = [
+            titleLabel.bottomAnchor.constraint(equalTo: imageView.bottomAnchor, constant: -55),
+            titleLabel.leadingAnchor.constraint(equalTo: imageView.leadingAnchor, constant: 30),
+            titleLabel.trailingAnchor.constraint(equalTo: imageView.trailingAnchor, constant: -30)
+        ]
+        NSLayoutConstraint.activate(titleLabelConstraints)
+        
         // add line view
         scrollView.addSubview(lineView)
         // constrain line view
@@ -162,6 +189,7 @@ class StoryViewController : UIViewController {
             typeLabel.text = "Story"
             storyLabel.text = story.text
             galleryStackView.isHidden = true
+            titleLabel.text = story.title
             
             // add storyView
             scrollView.addSubview(storyView)
@@ -222,6 +250,7 @@ class StoryViewController : UIViewController {
             storyView.isHidden = true
             numberOfImages = gallery.images.count
             print(numberOfImages)
+            titleLabel.text = gallery.title
                         
             for image in gallery.images {
                 
@@ -289,6 +318,8 @@ class StoryViewController : UIViewController {
         case .none:
             print("NONE")
         }
+        
+        
     }
     
     // кнопка закрыть

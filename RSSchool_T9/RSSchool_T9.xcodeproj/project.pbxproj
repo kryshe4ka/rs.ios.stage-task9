@@ -193,8 +193,8 @@
 			isa = PBXGroup;
 			children = (
 				3D374E9426B16B9A00C86470 /* CommonCollectionViewController.swift */,
-				3D374EB226B87EDE00C86470 /* ZoomViewController.swift */,
 				3D374EA526B4394E00C86470 /* StoryViewController.swift */,
+				3D374EB226B87EDE00C86470 /* ZoomViewController.swift */,
 				3D374EA226B2B74700C86470 /* Settings */,
 			);
 			path = Controllers;
