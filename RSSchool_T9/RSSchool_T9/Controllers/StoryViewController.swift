@@ -1,5 +1,3 @@
-////
-//// 📰 🐸
 //// Project: RSSchool_T9
 ////
 //// Author: Liza Kryshkovskaya
@@ -13,18 +11,18 @@ class StoryViewController : UIViewController {
     
     var drawOFF = false
     var strokeColor = UIColor.red.cgColor
+    var item: ContentType?
+    var numberOfImages = 0
     
     private var gradientLayer: CAGradientLayer = {
         let gradient = CAGradientLayer();
         gradient.colors = [
-                    UIColor(named: "gr1")!.cgColor,
-                    UIColor(named: "gr2")!.cgColor,
-                ];
-            
-            gradient.locations = [0.64, 1];
-            
-            return gradient;
-        }()
+            UIColor(named: "gr1")!.cgColor,
+            UIColor(named: "gr2")!.cgColor,
+        ];
+        gradient.locations = [0.64, 1];
+        return gradient;
+    }()
     
     let scrollView: UIScrollView = {
         let v = UIScrollView()
@@ -41,7 +39,6 @@ class StoryViewController : UIViewController {
         v.clipsToBounds = true
         v.layer.borderWidth = 1
         v.layer.borderColor = UIColor.white.cgColor
-        
         return v
     }()
     
@@ -107,16 +104,11 @@ class StoryViewController : UIViewController {
         return v
     }()
     
-    var item: ContentType?
-    var numberOfImages = 0
-
     override func viewDidLoad() {
         
         super.viewDidLoad()
-
         // add the scroll view to self.view
         self.view.addSubview(scrollView)
-
         // constrain the scroll view
         scrollView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         scrollView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
@@ -132,8 +124,6 @@ class StoryViewController : UIViewController {
         closeButton.widthAnchor.constraint(equalToConstant: 40).isActive = true
         
         // add imageView to the scroll view
-        
-        
         scrollView.addSubview(imageView)
         imageView.layer.insertSublayer(gradientLayer, at: 0)
         let imageViewConstraints = [
@@ -194,8 +184,7 @@ class StoryViewController : UIViewController {
                 storyLabel.bottomAnchor.constraint(equalTo: storyView.bottomAnchor, constant: -30)
             ]
             NSLayoutConstraint.activate(storyLabelConstraints)
-            
-            
+        
             // add path scroll view
             scrollView.addSubview(pathScrollView)
             // add constraints
@@ -214,7 +203,6 @@ class StoryViewController : UIViewController {
                 drawView.animateLinesWithColor(lineColor: strokeColor, lineWidth: 1.0, duration: 3.0, path: path, drawOFF: drawOFF)
                 pathScrollView.addSubview(drawView)
                 let drawViewConstraints = [
-
                     drawView.topAnchor.constraint(equalTo: pathScrollView.topAnchor, constant: 12),
                     drawView.heightAnchor.constraint(equalToConstant: 75),
                     drawView.leadingAnchor.constraint(equalTo: pathScrollView.leadingAnchor, constant: CGFloat(g+50)),
@@ -224,7 +212,6 @@ class StoryViewController : UIViewController {
                 g += 175
             }
             let pathViewConstraints = [
-
                 pathScrollView.subviews.last!.trailingAnchor.constraint(equalTo: pathScrollView.trailingAnchor, constant: -20),
             ]
             NSLayoutConstraint.activate(pathViewConstraints)
@@ -233,7 +220,6 @@ class StoryViewController : UIViewController {
             imageView.image = gallery.coverImage
             typeLabel.text = "Gallery"
             storyView.isHidden = true
-            
             numberOfImages = gallery.images.count
             print(numberOfImages)
                         
@@ -256,9 +242,7 @@ class StoryViewController : UIViewController {
                 galleryImage.clipsToBounds = true
                 galleryImage.translatesAutoresizingMaskIntoConstraints = false
                 galleryImageView.addSubview(galleryImage)
-                
-                
-                
+            
                 // constraints
                 let galleryImageConstraints = [
                     galleryImage.topAnchor.constraint(equalTo: galleryImageView.topAnchor, constant:10),
@@ -267,8 +251,6 @@ class StoryViewController : UIViewController {
                     galleryImage.bottomAnchor.constraint(equalTo: galleryImageView.bottomAnchor, constant:-10)
                 ]
                 NSLayoutConstraint.activate(galleryImageConstraints)
-                
-                
                 galleryStackView.addSubview(galleryImageView)
                 // constraints
                 let galleryImageViewConstraints = [
@@ -277,13 +259,10 @@ class StoryViewController : UIViewController {
                     galleryImageView.trailingAnchor.constraint(equalTo: galleryStackView.trailingAnchor),
                 ]
                 NSLayoutConstraint.activate(galleryImageViewConstraints)
-                
             }
             
             let testConst2 = [
-                
                 galleryStackView.subviews.first!.topAnchor.constraint(equalTo: galleryStackView.topAnchor, constant: 10),
-                //galleryStackView.subviews.last!.bottomAnchor.constraint(equalTo: galleryStackView.bottomAnchor, constant: -10)
             ]
             NSLayoutConstraint.activate(testConst2)
             
@@ -297,10 +276,8 @@ class StoryViewController : UIViewController {
             let height = numberOfImages * 511
             scrollView.addSubview(galleryStackView)
             
-            
             // constrain
             let galleryStackViewConstraints = [
-                
                 galleryStackView.topAnchor.constraint(equalTo: lineView.topAnchor, constant: 40),
                 galleryStackView.heightAnchor.constraint(equalToConstant: CGFloat(height)),
                 galleryStackView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 20),
@@ -312,9 +289,6 @@ class StoryViewController : UIViewController {
         case .none:
             print("NONE")
         }
-        
-        
-
     }
     
     // кнопка закрыть
@@ -337,17 +311,6 @@ class StoryViewController : UIViewController {
         self.addChild(zoomVC)
         self.view.addSubview(zoomVC.view)
         zoomVC.didMove(toParent: self)
-    }
-    
-    override func viewDidLayoutSubviews() {
-        
-//        self.closeButton.layer.cornerRadius = self.closeButton.bounds.width / 2;
-//
-//        let newItemTypeLabelFrame = CGRect(x: self.itemTypeLabel.frame.origin.x,
-//                                           y: self.itemTypeLabel.frame.origin.y + (self.itemTypeLabel.frame.height / 4),
-//                                           width: self.itemTypeLabel.frame.width,
-//                                           height: self.itemTypeLabel.frame.height);
-//        self.itemTypeLabel.frame = newItemTypeLabelFrame;
     }
 }
 

@@ -10,13 +10,9 @@
 import UIKit
 
 class CloseButton: UIButton {
-    //let screenSize: CGRect = UIScreen.main.bounds
-
     init() {
         super.init(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
-        //self.setTitle("X", for: .normal)
-       // self.setTitleColor(.white, for: .normal)
-        self.backgroundColor = .black
+        self.backgroundColor = .clear
         self.layer.cornerRadius = 20
         self.layer.borderWidth = 1
         self.layer.borderColor = UIColor.white.cgColor
@@ -29,11 +25,7 @@ class CloseButton: UIButton {
         }
         self.translatesAutoresizingMaskIntoConstraints = false
     }
-    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-
-
 }

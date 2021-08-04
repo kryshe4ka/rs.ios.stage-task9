@@ -99,10 +99,6 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
-    //ColorsViewController * colorsViewController = [[ColorsViewController alloc] init];
-    //self.colorsViewController.delegate = self;
-            
     [self.navigationController pushViewController:self.colorsViewController animated:YES];
 }
 
