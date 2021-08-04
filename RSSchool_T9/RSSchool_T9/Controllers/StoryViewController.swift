@@ -10,7 +10,7 @@ import UIKit
 class StoryViewController : UIViewController {
     
     var drawOFF = false
-    var strokeColor = UIColor.red.cgColor
+    var strokeColor = UIColor(named: "f3af22")?.cgColor
     var item: ContentType?
     var numberOfImages = 0
     
@@ -200,7 +200,7 @@ class StoryViewController : UIViewController {
             for path in story.paths {
                 let drawView = UIView()
                 drawView.translatesAutoresizingMaskIntoConstraints = false
-                drawView.animateLinesWithColor(lineColor: strokeColor, lineWidth: 1.0, duration: 3.0, path: path, drawOFF: drawOFF)
+                drawView.animateLinesWithColor(lineColor: strokeColor!, lineWidth: 1.0, duration: 3.0, path: path, drawOFF: drawOFF)
                 pathScrollView.addSubview(drawView)
                 let drawViewConstraints = [
                     drawView.topAnchor.constraint(equalTo: pathScrollView.topAnchor, constant: 12),
@@ -314,7 +314,6 @@ class StoryViewController : UIViewController {
     }
 }
 
-
 extension UIView {
     func animateLinesWithColor(lineColor: CGColor, lineWidth: CGFloat, duration:CGFloat, path: CGPath, drawOFF: Bool ) {
         let animateLayer = CAShapeLayer(layer: layer)
@@ -342,5 +341,3 @@ extension UIView {
         animateLayer.strokeEnd = 1.0
     }
 }
-
-
